@@ -31,3 +31,4 @@ See the [project documentation](https://centos.github.io/centos-bootc/).
 [2]: https://renovatebot.com
 [3]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit
 [4]: https://pre-commit.com/
+
