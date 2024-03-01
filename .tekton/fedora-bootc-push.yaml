@@ -21,30 +21,30 @@ spec:
   params:
     - name: image-file
       value: fedora-bootc.yaml
-  - name: git-url
+    - name: git-url
       value: "{{repo_url}}"
-  - name: output-image
-    value: quay.io/redhat-user-workloads/skabashn-tenant/fedora-bootc/fedora-bootc:{{revision}}
-  - name: path-context
-    value: .
-  - name: revision
+    - name: output-image
+      value: quay.io/redhat-user-workloads/skabashn-tenant/fedora-bootc/fedora-bootc:{{revision}}
+    - name: path-context
+      value: .
+    - name: revision
       value: "{{revision}}"
     - name: config-file
       value: "fedora-bootc-config.json"
   pipelineRef:
     name: ostree-build
   workspaces:
-  - name: workspace
-    volumeClaimTemplate:
-      metadata:
-        creationTimestamp: null
-      spec:
-        accessModes:
-        - ReadWriteOnce
-        resources:
-          requests:
-            storage: 1Gi
-      status: {}
+    - name: workspace
+      volumeClaimTemplate:
+        metadata:
+          creationTimestamp: null
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 1Gi
+        status: {}
     - name: workspace-arm64
       volumeClaimTemplate:
         metadata:
@@ -56,7 +56,7 @@ spec:
             requests:
               storage: 2Gi
         status: {}
-  - name: git-auth
-    secret:
+    - name: git-auth
+      secret:
         secretName: "{{ git_auth_secret }}"
 status: {}
