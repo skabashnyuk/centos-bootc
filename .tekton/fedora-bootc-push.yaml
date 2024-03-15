@@ -16,7 +16,7 @@ metadata:
     appstudio.openshift.io/component: fedora-bootc
     pipelines.appstudio.openshift.io/type: build
   name: fedora-bootc-on-push
-  namespace: centos-bootc-tenant
+  namespace: skabashn-tenant
 spec:
   params:
     - name: image-file
