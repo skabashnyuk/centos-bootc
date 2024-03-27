@@ -158,7 +158,7 @@ spec:
           workspace: workspace-arm64
         - name: basic-auth
           workspace: git-auth
-    - name: build-container-amd64
+    - name: q
       params:
         - name: IMAGE
           value: $(params.output-image)-amd64
@@ -183,7 +183,7 @@ spec:
           - name: name
             value: rpm-ostree
           - name: bundle
-            value: quay.io/redhat-appstudio-tekton-catalog/task-rpm-ostree:0.1@sha256:c0f2bff911ac6741b2f6dc064ed8a19d4ab1dea036a6235edbaa0f84fc639c25
+            value: quay.io/skabashn/task-rpm-ostree:0.1@sha256:0536596316fa165e3aee13b8ce56d67ae8dc5d07500bc27848c0b3ba8d01c0ab
           - name: kind
             value: task
         resolver: bundles
@@ -220,7 +220,7 @@ spec:
           - name: name
             value: rpm-ostree
           - name: bundle
-            value: quay.io/redhat-appstudio-tekton-catalog/task-rpm-ostree:0.1@sha256:c0f2bff911ac6741b2f6dc064ed8a19d4ab1dea036a6235edbaa0f84fc639c25
+            value: quay.io/skabashn/task-rpm-ostree:0.1@sha256:0536596316fa165e3aee13b8ce56d67ae8dc5d07500bc27848c0b3ba8d01c0ab
           - name: kind
             value: task
         resolver: bundles
