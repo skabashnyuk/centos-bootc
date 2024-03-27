@@ -183,7 +183,7 @@ spec:
           - name: name
             value: rpm-ostree
           - name: bundle
-            value: quay.io/skabashn/task-rpm-ostree:0.1@sha256:4bfbdd0d4257e618e6adc9bc3cc6dd500206d1106868c4b67ba2da5f0b3cf176
+            value: quay.io/skabashn/task-rpm-ostree:0.1@sha256:03c03eea653e36725eb03b1c0f2248955b8dddd96145d83b3b7907b017da5144
           - name: kind
             value: task
         resolver: bundles
@@ -220,7 +220,7 @@ spec:
           - name: name
             value: rpm-ostree
           - name: bundle
-            value: quay.io/skabashn/task-rpm-ostree:0.1@sha256:4bfbdd0d4257e618e6adc9bc3cc6dd500206d1106868c4b67ba2da5f0b3cf176
+            value: quay.io/skabashn/task-rpm-ostree:0.1@sha256:03c03eea653e36725eb03b1c0f2248955b8dddd96145d83b3b7907b017da5144
           - name: kind
             value: task
         resolver: bundles
