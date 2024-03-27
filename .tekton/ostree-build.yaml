@@ -158,7 +158,7 @@ spec:
           workspace: workspace-arm64
         - name: basic-auth
           workspace: git-auth
-    - name: q
+    - name: build-container-amd64
       params:
         - name: IMAGE
           value: $(params.output-image)-amd64
