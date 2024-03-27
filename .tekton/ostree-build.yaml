@@ -371,5 +371,3 @@ spec:
     - name: workspace-arm64
     - name: git-auth
       optional: true
-  pipelineSpec:
-    tasks: []
